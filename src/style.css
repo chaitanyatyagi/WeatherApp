@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.Background{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 100vh;
+    width: 100vw;
+}
+.Left{
+    width: 35%;
+    background-color: #1E213A;
+    display: grid;
+    grid-template-rows: 1fr 9fr 2fr 2fr 1fr 7fr ;
+    height: 100%;
+}
+.Right{
+    height: 100%;
+    width:65%;
+    background-color: #100E1D;
+    display: grid;
+    grid-template-rows: 1fr 4fr 0.5fr 4fr 3fr 0.3fr;
+}
+.Search{
+    display: flex;
+    align-items: center;
+}
+.Search input{
+    height: 3.5vh;
+    padding: 10px;
+    text-align: center;
+    border:3px solid black;
+    border-radius:5px;
+    width: 20vw;
+    font-size: 2.5vh;
+    color: black;
+}
+.Search button{
+    background-color:#1E213A;
+    border: 0px solid #1E213A;
+    cursor: pointer;
+}
+.Search img{
+    height: 35px;
+    width: 35px;
+}
+.LocationImage{
+    /* border: 2px solid white; */
+display: flex;
+justify-content: center;
+    align-items: flex-end;}
+.LocationImage img{
+    height: 40%;
+    width: 40%;
+}
+
+.Temperature{
+    display: flex;
+justify-content: center;
+    /* align-items: center; */
+    /* border: 2px solid white; */
+}
+/* .Temperature1{
+    display: flex;
+justify-content: center;
+    align-items: center;
+} */
+
+.WeatherDetail{
+    display: flex;
+justify-content: center;
+    /* align-items: flex-end; */
+    /* border: 2px solid white; */
+    font-size: 5.5vh;
+}
+
+.Date{
+    display: flex;
+justify-content: center;
+    align-items: flex-start;
+    /* border: 2px solid white; */
+    font-size: 1.5vh;
+}
+
+.Location{
+    display: flex;
+justify-content: center;
+    align-items:flex-start;
+    /* border: 2px solid white; */
+    font-size: 2vh;
+}
+
+.ButtonConvertor{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.CelsiusNew{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 60px;
+    /* background-color:#100E1D ; */
+    background-color: white;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.Celsius{
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 60px;
+    background-color:#100E1D ;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.Fahrenheit{
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 60px;
+    background-color:#100E1D ;
+    cursor: pointer;
+    font-size: 3vh;
+}
+.FahrenheitNew{
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 60px;
+    /* background-color:#100E1D ; */
+    background-color: white;
+    cursor: pointer;
+    font-size: 3vh;
+}
+
+.DailyReport{
+    /* border: 2px solid white; */
+display: flex;
+align-items:center;
+justify-content: space-around;
+}
+
+.Heading{
+    display: flex;
+    /* border: 2px solid white; */
+    justify-self: center;
+align-items: center;}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 10vh;
+}
+
+.TodayReportOne{
+    /* border: 2px solid white; */
+    display: flex;
+    align-items:center;
+    justify-content: space-around;}
+
+.TodayReportTwo{
+    /* border: 2px solid white; */
+display: flex;
+    align-items:center;
+    justify-content: space-around;}
+
+.Profile{
+    /* border: 2px solid white; */
+    font-size: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Profile a{
+    font-size: 1.5vh;
+}
+
+@media (min-width:0px) and (max-width:700px){
+    .Background{
+        flex-direction: column;
+    }
+    .Search input{
+        height: 3vh;
+        width: 40vw;
+        font-size: 2vh;
+    }
+}
+@media (min-width:400px) and (max-width:700px){ 
+.Left{
+    width: 100vw;
+    height: 46.4%;
+}
+.Right{
+    width: 100vw;
+    height: 53.6%;   
+}
+.WeatherDetail{
+    font-size: 4.5vh;
+    justify-content: center;
+}
+.Location{
+    font-size: 1.2vh;
+}
+.Date{
+    font-size: 1.2vh;
+}
+.Celsius{width: 30px;
+    font-size: 0.5rem;}
+    .CelsiusNew{width: 30px;
+    font-size: 0.5rem;}
+    .Fahrenheit{width: 30px;
+    font-size: 0.5rem;}
+    .FahrenheitNew{width: 30px;
+    font-size: 0.5rem;}
+    h1{
+        font-size: 6vh;
+    }
+}
+@media (min-width:200px) and (max-width:400px){
+    h1{
+        font-size: 3.5vh;
+    }
+.Left{
+    width: 100vw;
+    height: 42%;
+}
+.Right{
+    width: 100vw;
+    height: 58%;   
+}
+.WeatherDetail{
+    font-size: 4vh;
+}
+.Location{
+    font-size: 1vh;
+}
+.Date{
+    font-size: 1vh;
+}
+.Celsius{
+    padding: 5px;
+    width: 19px;
+    font-size: 0.4rem;}
+.CelsiusNew{
+    padding: 5px;
+    width: 19px;
+    font-size: 0.4rem;}
+.Fahrenheit{
+    padding: 5px;
+    width: 19px;
+    font-size: 0.4rem;}
+.FahrenheitNew{
+    padding: 5px;
+    width: 19px;
+    font-size: 0.4rem;}
+}
+@media (min-width:0px) and (max-width:200px){
+    h1{
+        font-size: 1.5vh;
+    }
+.Left{
+    width: 100vw;
+    height: 42%;
+}
+.Right{
+    width: 100vw;
+    height: 58%;   
+}
+.WeatherDetail{
+    font-size: 3vh;
+}
+.Location{
+    font-size: 0.6vh;
+}
+.Date{
+    font-size: 0.6vh;
+}
+.Celsius{
+    padding: 3px;
+    width: 15px;
+    font-size: 0.3rem;}
+.CelsiusNew{
+    padding: 3px;
+    width: 15px;
+    font-size: 0.3rem}
+.Fahrenheit{
+    padding: 3px;
+    width: 15px;
+    font-size: 0.3rem;}
+.FahrenheitNew{
+    padding: 3px;
+    width: 15px;
+    font-size: 0.3rem;}
+}
+@media (min-width:0px) and (max-width:1200px){
+    .DailyReport{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width:700px) and (max-width:4000px){
+    .Celsius{
+        padding: 5px;
+        width: 40px;
+        font-size: 2vh;}
+    .CelsiusNew{
+        padding: 5px;
+        width: 40px;
+        font-size: 2vh;}
+    .Fahrenheit{
+        padding: 5px;
+        width: 40px;
+        font-size: 2vh;}
+    .FahrenheitNew{
+        padding: 5px;
+        width: 40px;
+        font-size: 2vh;}
+}
+
+
+
